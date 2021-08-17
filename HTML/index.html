@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página para cálculo do IMC">
+    <link rel="shortcut icon" href="/images/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Calculadora IMC</title>
+    <script src="/JavaScript/index.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav role="navigation">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/images/logo.png" alt="Logotipo" width="50">
+                </a>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="oqueéimc.html">O que é IMC</a>
+                </li>
+                <li>
+                    <a href="sobrenos.html">Sobre nós</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1 class="titulo1">Cálculo IMC</h1>
+            <section class="form-wrapper">
+                <form name="calculo_imc">
+                    <div>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input class="form-control" type="text" placeholder="Ex: Cesar Alexandrini" name="nome"
+                                id="nome" required="required">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="peso">Peso</label>
+                            <div class="input-group">
+                                <input class="form-control" type="number" placeholder="Ex: 65" name="peso" id="peso"
+                                    required="required" step="0.01" min="0.01" max="500">
+                                <span class="span-group">Kg</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="altura">Altura</label>
+                            <div class="input-group">
+                                <input class="form-control" type="number" step="0.01" min="0.01" max="3"
+                                    placeholder="Ex: 1.70" name="altura" id="altura" required="required">
+                                <span class="span-group">m</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="form-group">
+                            <label for="">Mostrar Nome</label>
+                            <div>
+                                <label for="mostrar_nome">
+                                    <input type="radio" name="mostrar_nome" value="0" checked>
+                                    Sim
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="mostrar_nome">
+                                    <input type="radio" name="mostrar_nome" value="1">
+                                    Não
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Mostrar condição física</label>
+                            <select class="form-control" name="mostrar_condição_física" id="mostrar_condição_física">
+                                <option selected value="0">Sim</option>
+                                <option value="1">Não</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input class="button button-primary" type="submit" name="calculo_imc" id="calculo_imc"
+                        value="Calcular IMC" />
+                    <input class="button button-secondary" type="reset" name="limpar" id="limpar" value="Limpar" />
+                </form>
+                <p class="imc-result" id="mostrar_imc"></p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados - Cesar - Curitiba PR, 2021.</p>
+    </footer>
+
+</body>
+
+</html>

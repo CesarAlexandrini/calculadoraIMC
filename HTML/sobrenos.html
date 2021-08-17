@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sobre nós">
+    <link rel="shortcut icon" href="/images/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/style3.css">
+    <title>Sobre nós</title>
+</head>
+
+<body>
+
+    <header>
+        <nav role="navigation">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/images/logo.png" alt="Logotipo" width="50">
+                </a>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="oqueéimc.html">O que é IMC</a>
+                </li>
+                <li>
+                    <a href="sobrenos.html">Sobre nós</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1 class="titulo3">Quem Somos?</h1>
+            <section class="form-wrapper">
+                <article>
+                    Somos uma renomada empresa que atua diretamente em projetos na área da saúde, quer saber mais?
+                    Preencha os campos abaixo e nos contate.
+                </article>
+                <form>
+                    <p><strong>Entre em contato conosco:</strong></p>
+                    <form name="sobre_nos:"></form>
+                    <div>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input class="form-control" type="text" placeholder="Ex: Cesar Alexandrini" name="nome"
+                                id="nome" required="required">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <input class="form-control" type="text" placeholder="Digite o assunto." name="assunto"
+                                id="assunto" required="required">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descrição">Descrição</label>
+                            <textarea class="form-control" name="descricao" rows="5" cols="33"></textarea>
+                        </div>
+                    </div>
+
+                    <div>
+                        <input class="button button-primary" type="submit" name="sobre_nos" id="sobre_nos"
+                            value="Enviar">
+                    </div>
+                </form>
+                <p id="sobre_nos"></p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados - Cesar - Curitiba PR, 2021.</p>
+    </footer>
+
+</body>
+
+</html>

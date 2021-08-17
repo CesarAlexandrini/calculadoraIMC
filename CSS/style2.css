@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "STIX Two Math", serif;
+    background-color: #221a27;
+    line-height: 16px;
+}
+
+/*HEADER*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a{
+    text-decoration: none;
+    display: block;
+    color: rgb(223, 222, 222);
+    text-align: center;
+    padding: 14px 16px; 
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding: 8px;
+    cursor: pointer;
+}
+
+header nav {
+    background-color: #ff0072;
+    display: flex;
+    font-size: 18px;
+}
+
+header li a:hover {
+    background-color: #1111;
+}
+
+/*CONTAINER*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo2 {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    color:rgb(223, 222, 222);
+}
+
+.subcontainer {
+    width: 40%;
+    flex-direction: column;
+    font-size: 17px;
+    background-color: rgb(223, 222, 222);
+    padding: 8px 20px;
+    border-radius: 4px;
+    line-height: 20px;
+}
+
+article {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cliqueAqui {
+    color: #ff0072;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #ff0072;
+    display: flex;
+    color: rgb(223, 222, 222);
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    padding-left: 10px;
+    font-size: 15px;
